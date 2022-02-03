@@ -24,7 +24,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::7bIXsGgJnJx8kmP1',
+            '_route' => 'generated::k6oA1883Mr37l11Y',
           ),
           1 => NULL,
           2 => 
@@ -44,7 +44,63 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::BgGZdaT25zjXGilD',
+            '_route' => 'generated::b68Uzs0y4Pk1RvIF',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/api/pharmacies' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'pharmacies.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'pharmacies.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/api/pharmacies/create' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'pharmacies.create',
           ),
           1 => NULL,
           2 => 
@@ -64,7 +120,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::p574oFmSDh6KE9Hd',
+            '_route' => 'generated::5JSMVCyUSbCw3TBy',
           ),
           1 => NULL,
           2 => 
@@ -488,7 +544,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::rEnLx56KTg1cTFCa',
+            '_route' => 'generated::lKDNJGqMUbKvi3Yt',
           ),
           1 => NULL,
           2 => 
@@ -524,7 +580,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::nCzzX7c7LhcWeOA3',
+            '_route' => 'generated::gxUKuwwVYT7zTSev',
           ),
           1 => NULL,
           2 => 
@@ -654,7 +710,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::osaQUcxnzzURQP2Z',
+            '_route' => 'generated::vfYxdhWYRWUipdy4',
           ),
           1 => NULL,
           2 => 
@@ -689,11 +745,122 @@ app('router')->setCompiledRoutes(
     ),
     2 => 
     array (
-      0 => '{^(?|/reset\\-password/([^/]++)(*:32)|/verify\\-email/([^/]++)/([^/]++)(*:71))/?$}sDu',
+      0 => '{^(?|/api/(?|pharmacies/([^/]++)(?|(*:37)|/edit(*:49)|(*:56))|search/([^/]++)(*:79))|/reset\\-password/([^/]++)(*:112)|/verify\\-email/([^/]++)/([^/]++)(*:152))/?$}sDu',
     ),
     3 => 
     array (
-      32 => 
+      37 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'pharmacies.show',
+          ),
+          1 => 
+          array (
+            0 => 'pharmacy',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      49 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'pharmacies.edit',
+          ),
+          1 => 
+          array (
+            0 => 'pharmacy',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      56 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'pharmacies.update',
+          ),
+          1 => 
+          array (
+            0 => 'pharmacy',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'pharmacies.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'pharmacy',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      79 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'search',
+          ),
+          1 => 
+          array (
+            0 => 'search',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      112 => 
       array (
         0 => 
         array (
@@ -716,7 +883,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      71 => 
+      152 => 
       array (
         0 => 
         array (
@@ -755,7 +922,7 @@ app('router')->setCompiledRoutes(
   ),
   'attributes' => 
   array (
-    'generated::7bIXsGgJnJx8kmP1' => 
+    'generated::k6oA1883Mr37l11Y' => 
     array (
       'methods' => 
       array (
@@ -776,7 +943,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 'web',
         ),
-        'as' => 'generated::7bIXsGgJnJx8kmP1',
+        'as' => 'generated::k6oA1883Mr37l11Y',
       ),
       'fallback' => false,
       'defaults' => 
@@ -792,7 +959,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::BgGZdaT25zjXGilD' => 
+    'generated::b68Uzs0y4Pk1RvIF' => 
     array (
       'methods' => 
       array (
@@ -809,13 +976,13 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:47:"Laravel\\SerializableClosure\\SerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Signed":2:{s:12:"serializable";s:295:"O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:77:"function (\\Illuminate\\Http\\Request $request) {
     return $request->user();
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000031d019fd0000000077dd24e2";}";s:4:"hash";s:44:"q1gXq9KsxeHiwHYelEJPDm8jGDp6mxssOY14Tyrs6C8=";}}',
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"000000003413327600000000177fc17b";}";s:4:"hash";s:44:"bJuPN1T3+FOlHXYfOQmv0Mccl8FSSsRTVAw9oH7GtFU=";}}',
         'namespace' => NULL,
         'prefix' => 'api',
         'where' => 
         array (
         ),
-        'as' => 'generated::BgGZdaT25zjXGilD',
+        'as' => 'generated::b68Uzs0y4Pk1RvIF',
       ),
       'fallback' => false,
       'defaults' => 
@@ -831,7 +998,301 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::p574oFmSDh6KE9Hd' => 
+    'pharmacies.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/pharmacies',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+        ),
+        'as' => 'pharmacies.index',
+        'uses' => 'App\\Http\\Controllers\\API\\PharmacieController@index',
+        'controller' => 'App\\Http\\Controllers\\API\\PharmacieController@index',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'pharmacies.create' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/pharmacies/create',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+        ),
+        'as' => 'pharmacies.create',
+        'uses' => 'App\\Http\\Controllers\\API\\PharmacieController@create',
+        'controller' => 'App\\Http\\Controllers\\API\\PharmacieController@create',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'pharmacies.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'api/pharmacies',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+        ),
+        'as' => 'pharmacies.store',
+        'uses' => 'App\\Http\\Controllers\\API\\PharmacieController@store',
+        'controller' => 'App\\Http\\Controllers\\API\\PharmacieController@store',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'pharmacies.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/pharmacies/{pharmacy}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+        ),
+        'as' => 'pharmacies.show',
+        'uses' => 'App\\Http\\Controllers\\API\\PharmacieController@show',
+        'controller' => 'App\\Http\\Controllers\\API\\PharmacieController@show',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'pharmacies.edit' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/pharmacies/{pharmacy}/edit',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+        ),
+        'as' => 'pharmacies.edit',
+        'uses' => 'App\\Http\\Controllers\\API\\PharmacieController@edit',
+        'controller' => 'App\\Http\\Controllers\\API\\PharmacieController@edit',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'pharmacies.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'api/pharmacies/{pharmacy}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+        ),
+        'as' => 'pharmacies.update',
+        'uses' => 'App\\Http\\Controllers\\API\\PharmacieController@update',
+        'controller' => 'App\\Http\\Controllers\\API\\PharmacieController@update',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'pharmacies.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'api/pharmacies/{pharmacy}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+        ),
+        'as' => 'pharmacies.destroy',
+        'uses' => 'App\\Http\\Controllers\\API\\PharmacieController@destroy',
+        'controller' => 'App\\Http\\Controllers\\API\\PharmacieController@destroy',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'search' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'api/search/{search}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'api',
+        ),
+        'uses' => 'App\\Http\\Controllers\\API\\PharmacieController@search',
+        'controller' => 'App\\Http\\Controllers\\API\\PharmacieController@search',
+        'namespace' => NULL,
+        'prefix' => 'api',
+        'where' => 
+        array (
+        ),
+        'as' => 'search',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'generated::5JSMVCyUSbCw3TBy' => 
     array (
       'methods' => 
       array (
@@ -847,13 +1308,13 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:47:"Laravel\\SerializableClosure\\SerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Signed":2:{s:12:"serializable";s:262:"O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:44:"function () {
     return \\view(\'welcome\');
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000031d019f30000000077dd24e2";}";s:4:"hash";s:44:"IO1on4gLy0jEfE1XDLhn++OJi2l9T28r3wopWZ4jVgw=";}}',
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"000000003413327900000000177fc17b";}";s:4:"hash";s:44:"Tbqre/j8VHYseTBtVnYfNIm/qwONmPkDUXc3aj8RmVY=";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
         array (
         ),
-        'as' => 'generated::p574oFmSDh6KE9Hd',
+        'as' => 'generated::5JSMVCyUSbCw3TBy',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1720,7 +2181,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::rEnLx56KTg1cTFCa' => 
+    'generated::lKDNJGqMUbKvi3Yt' => 
     array (
       'methods' => 
       array (
@@ -1741,7 +2202,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::rEnLx56KTg1cTFCa',
+        'as' => 'generated::lKDNJGqMUbKvi3Yt',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1795,7 +2256,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::nCzzX7c7LhcWeOA3' => 
+    'generated::gxUKuwwVYT7zTSev' => 
     array (
       'methods' => 
       array (
@@ -1816,7 +2277,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::nCzzX7c7LhcWeOA3',
+        'as' => 'generated::gxUKuwwVYT7zTSev',
       ),
       'fallback' => false,
       'defaults' => 
@@ -2136,7 +2597,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::osaQUcxnzzURQP2Z' => 
+    'generated::vfYxdhWYRWUipdy4' => 
     array (
       'methods' => 
       array (
@@ -2157,7 +2618,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::osaQUcxnzzURQP2Z',
+        'as' => 'generated::vfYxdhWYRWUipdy4',
       ),
       'fallback' => false,
       'defaults' => 

@@ -9,6 +9,54 @@
 <body>
     <h1>ADMINISTRATOR</h1>
 
+    <form action="<?php echo e(route('admin.store')); ?>" method="POST">
+        <?php echo csrf_field(); ?>
+
+        <label for="date">Date</label><br>
+        <input type="date" name="date" id=""><br><br>
+
+        <label for="designation">Designation de pharmacie</label><br>
+        <input type="text" name="designation" id=""><br><br>
+
+        <label for="description">Description</label><br>
+        <input type="text" name="description" id=""><br><br>
+
+        <button type="submit">Valider</button>
+    </form><br><br>
+
+    <a href="<?php echo e(route('pharmacies.index')); ?>">
+        <button>Voir</button><br>
+    </a><br>
+
+    <table border="2">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Désignation Pharmacie</th>
+                <th>Description</th>
+                <th>Action</th>
+            </tr>
+            
+        </thead>
+        <tbody>
+            <?php $__currentLoopData = $pharmacies; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $pharmacie): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+            <tr>
+                <td> <?php echo e($pharmacie->date->format('Y-m-d')); ?> </td>
+                <td> <?php echo e($pharmacie->designation); ?> </td>
+                <td> <?php echo e($pharmacie->description); ?> </td>
+                <td>
+                    <form action="<?php echo e(route('pharmacies.destroy', ['pharmacy' => $pharmacie->id])); ?>" method="POST">
+                        <?php echo csrf_field(); ?>
+                        <?php echo method_field('DELETE'); ?>
+
+                        <button type="submit">Supprimer</button>
+                    </form>
+                </td>
+            </tr>
+            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+
+        </tbody>
+    </table>
     <form method="POST" action="<?php echo e(route('logout')); ?>">
         <?php echo csrf_field(); ?>
 

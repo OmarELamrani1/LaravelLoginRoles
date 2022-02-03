@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\AdminController;
+use App\Http\Controllers\API\PharmacieController;
 use App\Http\Controllers\User\UserController;
 use App\Http\Controllers\Manager\MangerController;
 use Illuminate\Support\Facades\Route;
@@ -27,7 +28,6 @@ Route::get('/', function () {
 Route::middleware(['auth'])->group(function(){
 
     Route::prefix('admin')->middleware(['AccessAuth:admin'])->name('admin.')->group(function () {
-        // Route::get('/profile', [AdminController::class,'profile'])->name('profile');
         Route::resource('/', AdminController::class);
     });
 
